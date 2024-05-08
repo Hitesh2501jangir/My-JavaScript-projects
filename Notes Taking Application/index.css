@@ -1,0 +1,73 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right bottom,#b40eca,#ce7d03);
+}
+img{
+    width: 20px;
+    height: 20px;
+    padding-left: 2px;
+    cursor: pointer;
+}
+#container{
+    padding-bottom: 50px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#add-button{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    background-color: #179712;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#add-button:hover{
+    background-color: #06a086;
+}
+
+.notes{
+    background-color: #393e46;
+    margin: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3 ease;
+}
+
+.notes:hover{
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+
+.tool{
+    padding: 5px;
+    background-color: #222831;
+    display: flex;
+    justify-content: end;
+    border-radius: 5px;
+}
+
+.notes textarea{
+    width: 300px;
+    padding: 10px;
+    outline: none;
+    min-height: 220px;
+    font-size: 20px;
+    color: #fff;
+    background: transparent;
+    resize: none;
+    border: none;
+}
+.notes textarea:focus{
+    outline: none;
+}
